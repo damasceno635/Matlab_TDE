@@ -2,7 +2,7 @@ clear; clc;
 
 % --------------------------
 % Ler o dataset Iris do CSV
-data = readtable('iris.csv');      
+data = readtable('iris.data');      
 X = table2array(data(:,1:4));        
 Y_str = data.Var5;                   
 Y_real = grp2idx(Y_str);             
